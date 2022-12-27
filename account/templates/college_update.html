@@ -1,0 +1,19 @@
+{%  extends 'main.html' %}
+{% load static %}
+{% block content %}
+{% load extra %}
+{% load add_attr %}
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">College Update #{{book.id}}</h5>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_table}}
+            <button type="submit" class="btn btn-success">Update</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,536 @@
+{%  extends 'main.html' %}
+{% block content %}
+{% load extra %}
+{% load custom_tags %}
+<br>
+<div class="card">
+	<div class="profile">
+		<div class="col-md">
+			{% if request.user|has_group:'Reviewer'%}
+			<div class="row ">
+
+				<div class="col-md-6 ">
+					<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">Username</label>
+					{{user.username}}
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<i class="fa fa-fw fa-square"></i>
+					<label class="col-md-3 font-weight-bolder text-dark text-left">First_name</label>
+					{{register.First_name}}
+
+
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Last_name</label>
+						{{register.Last_name}}
+
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Date_Of_Birth</label>
+						{{register.Date_Of_Birth}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">Gender</label>
+						{{register.Gender}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">State</label>
+						{{register.State}}
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">District</label>
+						{{register.District}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Address_Line1</label>
+						{{register.Address_Line1}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Address_Line2</label>
+						{{register.Address_Line2}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">City</label>
+						{{register.City}}
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Pincode</label>
+						{{register.Pincode}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			{% else %}
+			<div class="row ">
+
+				<div class="col-md-6 ">
+					<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">Username</label>
+					{{user.username}}
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<i class="fa fa-fw fa-square"></i>
+					<label class="col-md-3 font-weight-bolder text-dark text-left">First_name</label>
+					{{register.First_name}}
+
+
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Last_name</label>
+						{{register.Last_name}}
+
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Date_Of_Birth</label>
+						{{register.Date_Of_Birth}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">Gender</label>
+						{{register.Gender}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">State</label>
+						{{register.State}}
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">District</label>
+						{{register.District}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Address_Line1</label>
+						{{register.Address_Line1}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Address_Line2</label>
+						{{register.Address_Line2}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">City</label>
+						{{register.City}}
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Pincode</label>
+						{{register.Pincode}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Nationality</label>
+						{{register.Nationality}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">Enrolling as a </label>
+						{{register.Role}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">College Name</label>
+						{{register.College_Name}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row student">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-5 font-weight-bolder text-dark text-left">Date Of Joining Course</label>
+						{{register.Date_Of_Joining_Course}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Course</label>
+						{{register.Course}}
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row student">-->
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i><label class="col-md-3 font-weight-bolder text-dark text-left">Years/Prof</label>
+						{{register.Years}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-6 font-weight-bolder text-dark text-left">Last Quilyfing Exam Marksheet</label>
+						{{register.Last_Qualifying_Exam_Marksheet}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<!--			</div>-->
+				<!--			<div class="row guide1">-->
+				<div class="col-md-6">
+					<i class="fa fa-fw fa-square"></i> <label class="col-md-3 font-weight-bolder text-dark text-left">Designation</label>
+					{{register.Designation}}
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="row">
+					<div class="form-group has-feedback">
+						<i class="fa fa-fw fa-square"></i> <label class="col-md-4 font-weight-bolder text-dark text-left">NCISM Teacher Code</label>
+						{{register.Ncism_Teachers_Code}}
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<!--				<label class="col-md-3 font-weight-bold control-label" for="submit"></label>-->
+				<div class="col-md-12">
+					<div class="col-md justify-content-*-center">
+						<!-- Button to Open the Modal -->
+
+						<button class="btn btn-success " data-target="#myModal" id="newbutton" data-toggle="modal" type="button">
+							<span class="spinner-grow spinner-grow-sm "></span>
+							Edit you contact details
+						</button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+
+									<!-- Modal Header -->
+
+									<div class="modal-header">
+										<h4 class="modal-title">Profile</h4>
+										<button class="close" data-dismiss="modal" type="button">&times;</button>
+									</div>
+
+									<!-- Modal body -->
+									<div class="modal-body bg-info">
+										<div class="">
+
+											<form action="" method="POST">
+												{% csrf_token %}
+
+												{{ form.management_form }}
+
+
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.First_name.label}}</label>
+															{{form.First_name}}
+															<!--															<span class="glyphicon glyphicon-text-color form-control-feedback"></span>-->
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Last_name.label}}</label>
+															{{form.Last_name}}
+															<!--															<span class="glyphicon glyphicon-text-color form-control-feedback"></span>-->
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Date_Of_Birth.label}}</label>
+															{{form.Date_Of_Birth}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Gender.label}}</label>
+															{{form.Gender|addclass:'form-control'}}
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.State.label}}</label>
+															{{form.State|addclass:'form-control'}}
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.District.label}}</label>
+															{{form.District|addclass:'form-control'}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Address_Line1.label}}</label>
+															{{form.Address_Line1}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Address_Line2.label}}</label>
+															{{form.Address_Line2}}
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.City.label}}</label>
+															{{form.City}}
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Pincode.label}}</label>
+															{{form.Pincode}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Nationality.label}}</label>
+															{{form.Nationality|addclass:'form-control'}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">Enrolling as a </label>
+															{{form.Role|addclass:'form-control'}}
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">College Name</label>
+															{{form.College_Name|addclass:'form-control'}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+												</div>
+												<div class="row student">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Date_Of_Joining_Course.label}}</label>
+															{{form.Date_Of_Joining_Course|addclass:'form-control'}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">{{form.Course.label}}</label>
+															{{form.Course|addclass:'form-control'}}
+														</div>
+													</div>
+												</div>
+												<div class="row student">
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">Years/Prof</label>
+															{{form.Years|addclass:'form-control'}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">Last Quilyfing Exam Marksheet</label>
+															{{form.Last_Qualifying_Exam_Marksheet|addclass:'form-control'}}
+															<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+														</div>
+													</div>
+												</div>
+												<div class="row guide1">
+													<div class="col-md-6">
+														<label class="col-md font-weight-bolder text-dark text-left">Designation</label>
+														{{form.Designation|addclass:'form-control'}}
+													</div>
+													<div class="col-md-6">
+														<div class="form-group has-feedback">
+															<label class="col-md font-weight-bolder text-dark text-left">NCISM Teacher Code</label>
+															{{form.Ncism_Teachers_Code|addclass:'form-control'}}
+														</div>
+													</div>
+												</div>
+
+												<br>
+												<div class="form-row">
+													<label class="col-md-3 font-weight-bold control-label"
+													       for="submit"></label>
+													<div class="col">
+														<button class="btn btn-warning" id="submit688" name="submit">
+															SUBMIT
+														</button>
+													</div>
+												</div>
+
+											</form>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+{% endif %}
+
+		</div>
+	</div>
+</div>
+<script>
+		//Query All input fields
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Username...';
+		form_fields[2].placeholder='Email...';
+		form_fields[3].placeholder='Enter password...';
+		form_fields[4].placeholder='Re-enter Password...';
+		form_fields[4].placeholder='Re-enter Password...';
+		form_fields[5].placeholder='First Name...';
+		form_fields[6].placeholder='Last Name...';
+		for (var field in form_fields){
+			form_fields[field].className += ' form-control'
+		}
+
+	
+
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+			$('#newbutton').on('click', function(){
+				$('#id_Role').on('change', function(){
+					var demovalue = $(this).val();
+					if(demovalue == 'Student'){
+						$(".student").show();
+						$(".guide1").hide();
+					}
+					else if(demovalue == 'Guide')
+					{
+					$(".student").hide();
+					$(".guide1").show();
+					}
+					else
+					{
+					$(".student").hide();
+					$(".guide1").hide();
+					}
+				});
+				$(".student").hide();
+				$(".guide1").hide();
+			});
+
+	
+
+
+
+
+</script>
+
+{% endblock %}

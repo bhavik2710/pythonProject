@@ -1,0 +1,109 @@
+{% load static %}
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>SPARK-CCRAS</title>
+		<script type="text/javascript" src="{% static 'spark_jq.js' %}"></script>
+		<script type="text/javascript" charset="utf-8">
+			// when user clicks inside the container...
+			function run_function()
+			{
+				//..animate the description div by changing it's left position to it's width (but as negative number)...
+				$('.curtain_wrapper').children('.description').animate({'left': -1*$(this).width()});
+				//...animate the 2 curtain images to width of 50px with duration of 2 seconds...
+				$('.curtain_wrapper').children('img.curtain').animate({ width: 50 },{duration: 5000});
+				//...show the content behind the curtains with fadeIn function (2 seconds)
+				$('.curtain_wrapper').children('.content').fadeIn(2000);
+				setInterval(function(){ window.open("/","_self"); }, 4000);
+			}
+		</script>
+		<style type="text/css" media="screen">
+			/*BOTH CURTAIN IMAGES CLASS*/
+			img.curtain{
+			height:900px; /* so jQuery doesn't keep ascpect ration when animating the width '*/
+			z-index:99; /* to show it on top of the content*/
+			}
+			/*LEFT CURTAIN IMAGE CLASS*/
+			img.curtainLeft{
+			position:absolute; /*absolute positioning is important*/
+			left:0px; /*position it on left side of the container*/
+			}
+			/*RIGHT CURTAIN IMAGE CLASS*/
+			img.curtainRight{
+			position:absolute; /*absolute positioning is important*/
+			right:0px; /*position it on the right side of the container*/
+			}
+			/*THE CLASS OF THE WRAPPING DIV (THAT WRAPS EVERYTHING)*/
+			.curtain_wrapper{
+			width:100%; /* same as width of both the images summed */
+			height:900px; /* same as height of the images*/
+			position:relative; /*relative position so we can absolutely position the child elements*/
+			overflow:hidden; /*hide everything out of boundaries (in this case for the description div)*/
+			color:white; /* just styling*/
+			background:none; /* just styling*/
+			}
+			/*THE TEXT DIV CLASS (BEHIND THE CURTAINS)*/
+			.content{
+			position:relative; /*so we can center it*/
+			width: 100%;; /*curtain_wrapper width - shrinked image width (50px is image when shrinked)*/
+			margin:0px auto; /*center it*/
+			display:none; /*we don't want our users to see the content while the curtain images are loading*/
+			}
+			.cur_head
+			{
+			margin-top:2px;
+			}
+			/*DESCRIPTION DIV CLASS (THE TEXT ON TOP LEFT SIDE IN THE DEMO)*/
+			.description{
+			position:absolute; /*absolute position is important*/
+			top:0px; /*position it on top of the curtain_wrapper*/
+			z-index:100; /*show it on top of the curtain (remember that they have z-index of 99)*/
+			/*styling bellow*/
+			padding:5px;
+			text-align:center;
+			font-size:15px;
+			background:#eee;
+			border:1px solid #ccc;
+			border-left:0px;
+			border-top:0px;
+			color:black;
+			}
+			body
+			{
+			position: fixed;
+			overflow-y: scroll;
+			width: 100%;
+			}
+		</style>
+		<style type="text/css" media="screen">
+			body{ font-family: 'tahoma' }
+			h4, p { padding-left:5px; padding-right:5px; }
+			p { font-size:14px; }
+		</style>
+	</head>
+	<body onLoad="run_function()">
+		<!--START THE WRAPPER-->
+		<div class='curtain_wrapper'>
+			<!-- 2 CURTAIN IMAGES START HERE  -->
+			<img class='curtain curtainLeft' src="{% static 'c_red_1.jpg' %}"  />
+			<img class='curtain curtainRight' src="{% static 'c_red_2.jpg' %}"   />
+			<!-- END IMAGES -->
+			<!-- START THE CONTENT DIV -->
+			<div class='content'>
+				<!-- YOUR CONTENT HERE -->
+				<div>
+					<center><img style="width:100%; height:100% margin-top:5%" src="{% static 'spark_login.png' %}" /></center>
+				</div>
+				<!--<center><h2 style="margin-top:20%;">Web Accessbility Project	</h2></center>
+					<div style="margin-left:10%;margin-right:10%;">
+				<center><span>implemented By: &nbsp; ERNET India<span></center> -->
+			</div>
+			<!-- END YOUR CONTENT -->
+		</div>
+		<!-- END THE CONTENT DIV -->
+		<!-- START DESCRIPTION DIV, WHICH WILL BE SHOWN ON TOP OF THE CURTAIN AND REMOVED WHEN THE CURTAINS OPEN -->
+		<!-- END DESCRIPTION DIV -->
+	
+	<!--END THE WRAPPER-->
+</body>
+</html>

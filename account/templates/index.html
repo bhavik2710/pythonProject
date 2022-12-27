@@ -1,0 +1,277 @@
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>CCRAS-SPARK</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<!-- Favicons -->
+		<link href="{% static 'BizLand/assets/img/favicon.png' %}" rel="icon">
+		<link href="{% static 'BizLand/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+		<!-- Vendor CSS Files -->
+		<link href="{% static 'BizLand/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+		<link href="{% static 'BizLand/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+		<link href="{% static 'BizLand/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+		<link href="{% static 'BizLand/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+		<link href="{% static 'BizLand/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+		<link href="{% static 'BizLand/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+		<!-- Template Main CSS File -->
+		<link href="{% static 'BizLand/assets/css/style.css' %}" rel="stylesheet">
+	</head>
+	<style>
+		.glow {
+		text-align: center;
+		animation: glow 1s ease-in-out infinite alternate;
+		}
+		@-webkit-keyframes glow {
+		from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #66b3ff, 0 0 40px #66b3ff, 0 0 50px #66b3ff, 0 0 60px #66b3ff, 0 0 70px #66b3ff;
+		}
+		to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+		}
+		}
+	</style>
+	<script>
+		var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+		var t = setInterval(function () {
+			var ele = document.getElementById('myBlinkingDiv');
+			ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+		}, blink_speed);</script>
+		<body>
+			<!-- ======= Top Bar ======= -->
+			<section class="d-flex align-items-center" id="topbar">
+				<div class="container d-flex justify-content-center justify-content-md-between">
+					<div class="contact-info d-flex align-items-center">
+						<i class="bi bi-envelope d-flex align-items-center"><a href="mailto:spark.ayu@ccras.nic.in">spark.ayu@ccras.nic.in</a></i>
+					</div>
+					<div class="social-links d-none d-md-flex align-items-center">
+						<a class="twitter" href="#"><i class="bi bi-twitter"></i></a>
+						<a class="facebook" href="#"><i class="bi bi-facebook"></i></a>
+						<a class="instagram" href="#"><i class="bi bi-instagram"></i></a>
+					<a class="linkedin" href="#"><i class="bi bi-linkedin"></i></i></a>
+				</div>
+			</div>
+		</section>
+		<!-- ======= Header ======= -->
+		<header class="d-flex align-items-center" id="header">
+			<div class="container d-flex align-items-center justify-content-between">
+				<!-- <h1 class="logo"><a href="index.html">Spark<span>.</span></a></h1> -->
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<a class="logo" href="index.html"><img alt="" src="{% static 'BizLand/assets/img/ccras_logo.png' %}"></a>
+				<nav class="navbar" id="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="#about">About</a></li>
+						<li><a class="nav-link scrollto" href="#services">Instructions</a></li>
+						<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+						<li><a class="nav-link scrollto" href=" {% url 'login' %}" target="_blank">Login</a></li>
+						<li><a class="nav-link scrollto" href="{% static 'important_notes.docx' %}" target="_blank">FAQ</a></li>
+						<li><a class="nav-link scrollto" href="{% static 'aaf.pdf' %}" target="_blank">Download Application Attestation Form</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav><!-- .navbar -->
+			</div>
+		</header><!-- End Header -->
+		<!-- ======= Hero Section ======= -->
+		<section class="d-flex align-items-center" id="hero">
+			<div class="container" data-aos="zoom-out" data-aos-delay="100">
+				<h1>Welcome to <span>CCRAS-SPARK</span></h1>
+				<div class="d-flex">
+					<a class="btn-get-started scrollto" href="#about">Get Started</a>
+				</div>
+			</div>
+		</section><!-- End Hero -->
+		<br>
+		<marquee ><h4>The last date of Registration for SPARK has been extended till 15th November, 2022 (till the date of submission of application/ proposal)</h4></marquee>
+		<br>
+		<br>
+		<center><h4><a href="{% static 'matter.docx' %}" target="_blank" id="myBlinkingDiv" class="glow">Please Click here for Important Information</a></h4></center>
+		<br>
+		<br>
+		<marquee><h4> <mark  class="glow">Important Notification </mark> In case of difficulty in registration, Aadhaar number of Student and Guide may be used in place of SPARK ID during submission of PDF
+			copy
+			of proposal
+			through
+			email at
+		spark.ayu@ccras.nic.in</h4></marquee>
+		<!-- ======= About Section ======= -->
+		<section class="about section-bg" id="about">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>About</h2>
+					<h3>Find Out More <span>SPARK-CCRAS</span></h3><br>
+					<div class="col-md-12 fst-italic" style="text-align: justify;">The Central Council for Research in Ayurvedic Sciences (CCRAS) has initiated the “STUDENTSHIP PROGRAM FOR AYURVEDA RESEARCH KEN (SPARK) in order to promote interest and aptitude for research among ayurveda undergraduates. The main objective of this program is to provide an opportunity to undergraduate Ayurveda students to familiarize themselves with research methodology and techniques by being associated for a short duration with their seniors on ongoing research program or by undertaking independent projects. This may serve as an incentive for them to take up research as a career in the future. The Guide/ Institution must provide the student with all facilities for carrying out research. A number of students are being benefitted by the similar program conducted by ICMR (https://sts.icmr.org.in/) and CCRH (https://www.ccrhindia.nic.in//admnis/admin/showimg.aspx?ID=15931 ).
+					</div>
+					<br>
+					<div class="col-md-12 fst-italic" style="text-align: justify;">The value of the studentship will be Rs.25,000/- per month for two months duration (Total Rs.50,000/- only) and is meant to be a stipend for the student. This is paid only after completion of research and approval of final report. Costs of research must be borne by Institution/Medical College where research is conducted. CCRAS institutes may be approached by the Guide/student for any technical guidance in formulation and execution of research proposals. A certificate will be issued and posted to Principal's office after 6-8 months of completion of research.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+						<img alt="" class="img-fluid" src="{% static 'BizLand/assets/img/student.jpeg' %} " height="100%" style="padding-top: 100;">
+					</div>
+					<div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+						<h3 class="fst-italic">Eligibility:</h3>
+						<p class="fst-italic" style="text-align: justify;"> This program is only for interested Bachelor of Ayurvedic Medicine and Surgery (BAMS) students [1st year to 4th year (before appearing in 4th year final exams)] studying in Ayurvedic Medical recognized by NCISM, before they appear in their final exams and therefore, interns/ PG students are not eligible to apply.
+						</p>
+						<p class="fst-italic" style="text-align: justify;">
+							The student must carry out the research in his/ her own medical college under the guide who is regular faculty of the medical college. Only permanent full time faculty members working in any of the Department of the Medical College where the student is enrolled can act as the guide. Part time consultants/visiting faculty/ residents/ Tutors/ PG students cannot be the guide.
+						</p>
+						<p class="fst-italic" style="text-align: justify;">
+							Only one student will be allowed to work under one guide. Two or more students are not permitted to work on the same topic in a group. Proposals submitted on the same topic by different students are liable to be rejected outright. The student may have one Guide and other Co-Guides. However, CCRAS will recognize only ONE main Guide for all purposes.
+						</p>
+						<p class="fst-italic" style="text-align: justify;">
+							Only Indian National students who are studying in recognized Ayurvedic medical colleges of India can apply. NRI's & Students from foreign institutes are not eligible for this program.
+						</p>
+						<p class="fst-italic" style="text-align: justify;">
+							One student can apply in any year of his undergraduate tenure but the studentship can be awarded only two times in different years to one student subject to selection of his application on merits.
+							&nbsp;&nbsp;<a href="{% static 'spark.pdf' %}" target="_blank"> Read More</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section><!-- End About Section -->
+		<section class="timeline" id="timeline">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>Application Process (Timeline)</h2>
+					<br>
+					<br>
+					<div class="col-md-12" style="text-align: justify;">
+						<ul style="text-align:justify">
+						
+
+
+
+
+
+							<li class="fst-italic" style="text-align: justify;">
+								Application Process (Timeline)
+Register on CCRAS website & Submission of application/proposal till 15th
+November, 2022
+							</li>
+							<li class="fst-italic" style="text-align: justify;">
+								Proposal will be sent to three reviewers for marking and average (70%) along 
+with 30% of last passing examination marks will be considered for final merit.
+							</li>
+							<li class="fst-italic" style="text-align: justify;">
+								Results will be displayed on the website till 15th January, 2023
+							</li>
+							<li class="fst-italic" style="text-align: justify;">
+								Completion of project till 30th April, 2023
+							</li>
+							<li class="fst-italic" style="text-align: justify;">
+								Submission of report till 31st May of the next year. 
+							</li>
+							<li>
+								Award of Stipend and Certificate till 31st July, 2023 subject to approval of 
+report.
+							</li>
+							
+						</ul></div>
+				</div>
+			</div>
+		</section>
+		<section class="services" id="services">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>General Instructions</h2>
+				</div>
+				<!--- List of Instruction---->
+				<div class="col-md-12" style="text-align: justify;">
+					<ul style="text-align:justify">
+						<li class="fst-italic" style="text-align: justify;">
+							Students are requested to visit CCRAS SPARK website (http://spark.ccras.nic.in/) and comply with instructions updated from time to time about SPARK program.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							Students who were unable to complete their SPARK project can re-apply for next SPARK program with the same project. However, it will not be given any special preference and will be treated as a fresh/ new application. For SPARK program, the last date for receiving ONLINE completed applications with research proposal and other enclosures is 15th November. The student should have all documents ready before filling up online application form (Research proposal/ attestation form/ other enclosures like IEC approval, ICF, Case record forms etc).
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							Scanned documents i.e. Application/ Report Attestation Form, Ethics Committee Clearance or other files viz., Case record, Questionnaire etc. should be submitted as PDF file only.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							Only PDF files can be uploaded on CCRAS website and other formats viz. MS Word, JPEG etc. will not be accepted.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							Students/Guides are requested to submit SPARK applications well in advance and not to wait for the last date to avoid the last minute rush.
+						</li>
+						<li>
+							The Council will not be responsible in case the student is unable to submit the proposal/ project in time due to any reason whatsoever and request for extension of last date will not be considered.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							After completion of the project under SPARK, CCRAS and Ministry of AYUSH shall not be responsible to provide / ensure any kind of paid or honorary, part or full-time employment to the student in the Council or Ministry.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							Change of guide, in any case, must be intimated by email to CCRAS at: spark.ayu@ccras.nic.in within 15 days with the acceptance of new guide under approval of Head of Intuition/Principal.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							All disputes pertaining to this programme shall fall within the jurisdiction of Delhi only.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							All correspondence will be sent on e-mail and/or College address only.
+						</li>
+						<li class="fst-italic" style="text-align: justify;">
+							For any further clarifications applicant may contact on given e-mail and the Reference ID in all the e-mail correspondence must be quoted for quick reference:
+						</li>
+					</ul></div>
+			</div>
+		</section>
+		<!-- ======= Contact Section ======= -->
+		<section class="contact" id="contact">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>Contact</h2>
+					<h3><span>Contact Us</span></h3>
+					<p>  </p>
+				</div>
+				<div class="row" data-aos="fade-up" data-aos-delay="100">
+					<div class="col-lg-6">
+						<div class="info-box mb-4">
+							<i class="bx bx-map"></i>
+							<h3>Our Address</h3>
+							<p> CCRAS, 61-65, opp. 'D' Block, Institutional Area, Janakpuri, New Delhi - 110058 </p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="info-box  mb-4">
+							<i class="bx bx-envelope"></i>
+							<h3>Email Us</h3>
+							<p>spark.ayu@ccras.nic.in</p>
+						</div>
+					</div>
+					<!--          <div class="col-lg-3 col-md-6">-->
+					<!--            <div class="info-box  mb-4">-->
+					<!--              <i class="bx bx-phone-call"></i>-->
+					<!--              <h3>Call Us</h3>-->
+					<!--              <p> 011 2852 5862  </p>-->
+					<!--            </div>-->
+					<!--          </div>-->
+				</div>
+			</div>
+		</section>
+</main><!-- End #main -->
+<div class="container py-4">
+	<div class="copyright">
+		&copy; Copyright <strong><span>ICMR-CCRAS 2022.</span></strong>. All Rights Reserved  || Designed by BMI division ICMR
+	</div>
+</div>
+</footer><!-- End Footer -->
+<div id="preloader"></div>
+<a class="back-to-top d-flex align-items-center justify-content-center" href="#"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="{% static 'BizLand/assets/vendor/purecounter/purecounter.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+<script src="{% static 'BizLand/assets/vendor/php-email-form/validate.js' %}"></script>
+<!-- Template Main JS File -->
+<script src="{% static 'BizLand/assets/js/main.js' %}"></script>
+</body>

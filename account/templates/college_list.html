@@ -1,0 +1,56 @@
+{%  extends 'main.html' %}
+{% load static %}
+{% block content %}
+{% load extra %}
+{% load add_attr %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css"></script>-->
+<!--<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>-->
+<!--<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>-->
+<!--<script>-->
+<!--$(document).ready(function() {-->
+<!--    $('#example').DataTable();-->
+<!--} );-->
+
+
+
+<!--</script>-->
+<center>
+		<a class="btn btn btn-warning" href="{% url 'college-create'  %}">Add College</a>
+</center>
+<table class="table" id="example">
+  
+		<thead class="thead-light">
+				<tr>
+						<th scope="col">Id</th>
+						<th scope="col">Name</th>
+<!--						<th scope="col">Address</th>-->
+						<th scope="col">State</th>
+<!--						<th scope="col"></th>-->
+						<th scope="col"></th>
+<!--						<th scope="col"></th>-->
+				</tr>
+		</thead>
+		<tbody>
+				{% for book in books %}
+				<tr>
+						<td>{{book.id}}</td>
+						<td>{{book.College_Name}}</td>
+<!--						<td>{{book.College_Address}}</td>-->
+						<td>{{book.State}}</td>
+<!--						<td>-->
+<!--								<a class="btn btn-success" href="{% url 'college-detail' book.id %}">View</a>-->
+<!--						</td>-->
+						<td>
+								<a class="btn btn-info" href="{% url 'college-update' book.id %}">Update</a>
+						</td>
+<!--						<td><a class="btn btn-danger" href="{% url 'college-delete' book.id %}">Delete</a></td>-->
+				</tr>
+				{% endfor %}
+		</tbody>
+</table>
+{% if is_paginated %}
+{% include "_pagination.html" %}
+{% endif %}
+
+{% endblock %}

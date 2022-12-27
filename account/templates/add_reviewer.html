@@ -1,0 +1,326 @@
+{%  extends 'main.html' %}
+{% load static %}
+{% block content %}
+{% load extra %}
+{% load add_attr %}
+
+
+
+{% if form1.errors %}
+{% for field in form1 %}
+{% for error in field.errors %}
+<div class="alert alert-danger">
+	{{field.label}} ---- {{ error|escape }}
+</div>
+{% endfor %}
+{% endfor %}
+{% endif %}
+{% if form2.errors %}
+{% for field in form2 %}
+{% for error in field.errors %}
+<div class="alert alert-danger">
+	{{field.label}} ---- {{ error|escape }}
+</div>
+{% endfor %}
+{% endfor %}
+{% endif %}
+<body class="hold-transition register-page">
+<div class="register-box">
+	<div class="register-logo">
+		<a href="../../index2.html"><b>Add Reviewer</b></a>
+	</div>
+	<div class="register-box-body">
+		<form method="POST" data-district-url="{% url 'load_district' %}" id="personForm" enctype="multipart/form-data" action="">
+			{% csrf_token %}
+			{{ form.management_form }}
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form1.username.label}}</label>
+						{{form1.username|addclass:'form-control required1'}}
+						{{form1.username.errors}}
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+						Required. 150 characters or fewer. Letters, digits only.
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form1.email.label}}</label>
+						{{form1.email|addclass:'form-control required1'}}
+						{{form1.email.errors}}
+						<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form1.password1.label}}</label>
+						{{form1.password1|addclass:'form-control required1'}}
+						{{form1.password1.errors}}
+						<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form1.password2.label}}</label>
+						{{form1.password2|addclass:'form-control required1'}}
+						{{form1.password2.errors}}
+						<span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul>
+					<li>Your password can't be too similar to your other personal information.</li>
+					<li>Your password must contain at least 8 characters.</li>
+					<li>Your password can't be a commonly used password.</li>
+					<li>Your password can't be entirely numeric.</li>
+				</ul>
+
+
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.First_name.label}}</label>
+						{{form2.First_name|addclass:'form-control required1'}}
+						{{form2.First_name.errors}}
+						<span class="glyphicon glyphicon-text-color form-control-feedback"></span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Last_name.label}}</label>
+						{{form2.Last_name|addclass:'form-control required1'}}
+						{{form2.Last_name.errors}}
+						<span class="glyphicon glyphicon-text-color form-control-feedback"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Date_Of_Birth.label}}</label>
+						{{form2.Date_Of_Birth|addclass:'form-control required1'}}
+						{{form2.Date_Of_Birth.errors}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Gender.label}}</label>
+						{{form2.Gender|addclass:'form-control required1'}}
+						{{form2.Gender.errors}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.State.label}}</label>
+						{{form2.State|addclass:'form-control required1'}}
+						{{form2.State.errors}}
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.District.label}}</label>
+						{{form2.District|addclass:'form-control required1'}}
+						{{form2.District.errors}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Address_Line1.label}}</label>
+						{{form2.Address_Line1|addclass:'form-control required1'}}
+						{{form2.Address_Line1.errors}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Address_Line2.label}}</label>
+						{{form2.Address_Line2|addclass:'form-control'}}
+						{{form2.Address_Line2.errors}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.City.label}}</label>
+						{{form2.City|addclass:'form-control required1'}}
+						{{form2.City.errors}}
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Pincode.label}}</label>
+						{{form2.Pincode|addclass:'form-control'}}
+						{{form2.Pincode.errors}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">{{form2.Nationality.label}}</label>
+						{{form2.Nationality|addclass:'form-control required1'}}
+						{{form2.Nationality.errors}}
+						<!--                        <span class="glyphicon glyphicon-list form-control-feedback"></span>-->
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-feedback">
+						<label class="col-md font-weight-bolder text-dark text-left">Enrolling as a Reviewer</label>
+						{{form2.is_reviewer|addclass:'required1'}}
+						{{form2.is_reviewer.errors}}
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+						<!-- /.col -->
+						<div class="col-xs-4">
+							<button type="submit" id="submit1" class="btn btn-primary btn-block btn-flat">Register</button>
+						</div>
+						<!-- /.col -->
+					</div>
+
+		</form>
+		{{form.errors}}
+
+		<!-- /.form-box -->
+	</div>
+</div>
+<!--<script>-->
+<!--		//Query All input fields-->
+<!--		var form_fields = document.getElementsByTagName('input')-->
+<!--		form_fields[1].placeholder='Username...';-->
+<!--		form_fields[2].placeholder='Email...';-->
+<!--		form_fields[3].placeholder='Enter password...';-->
+<!--		form_fields[4].placeholder='Re-enter Password...';-->
+<!--		form_fields[4].placeholder='Re-enter Password...';-->
+<!--		form_fields[5].placeholder='First Name...';-->
+<!--		form_fields[6].placeholder='Last Name...';-->
+<!--		for (var field in form_fields){-->
+<!--			form_fields[field].className += ' form-control'-->
+<!--		}-->
+
+
+<!--</script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#submit1').click(function(e) {
+			var isValid = true;
+			$('.required1').each(function() {
+				if ($.trim($(this).val()) == '') {
+					isValid = false;
+					$(this).css({
+						"border": "1px solid red",
+						"background": "#FFCECE"
+					});
+					alert($(this).attr("name") + " " + 'field is empty')
+				}
+				else {
+					$(this).css({
+						"border": "",
+						"background": ""
+					});
+				}
+			});
+			if(!$("#id_is_reviewer").is(':checked')){
+	confirm("Please tick is Enrolling as a Reviewer")
+	isValid = false;
+	$(id_is_reviewer).css({
+	"border": "1px solid red",
+	"background": "#FFCECE"
+	});
+	}
+			if (isValid == false)
+			e.preventDefault();
+			else
+			alert('Thank you for submitting');
+		});
+	});
+
+
+</script>
+<script>
+			$(document).ready(function(){
+				$('#id_Role').on('change', function(){
+					var demovalue = $(this).val();
+					if(demovalue == 'Student'){
+						$(".student").show();
+						$(".guide1").hide();
+					}
+					else if(demovalue == 'Guide')
+					{
+					$(".student").hide();
+					$(".guide1").show();
+					}
+					else
+					{
+					$(".student").hide();
+					$(".guide1").hide();
+					}
+				});
+				$(".student").hide();
+				$(".guide1").hide();
+			});
+
+
+</script>
+<script>
+	$(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+	})
+
+</script>
+
+<script>
+	$(document).ready(function(){
+	$("#id_State").change(function () {
+	const url = $("#personForm").attr("data-district-url");
+	const DistrictId = $(this).val();  // get the selected country ID from the HTML input
+	$.ajax({                       // initialize an AJAX request
+	url: url,                    // set the url of the request (= /persons/ajax/load-cities/ )
+	data: {
+	'district_id': DistrictId       // add the town id to the GET parameters
+	},
+	success: function (data) {   // `data` is the return of the `load_cities` view
+	console.log(data)
+	$("#id_District").html(data);
+	}
+	});
+	});
+	});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

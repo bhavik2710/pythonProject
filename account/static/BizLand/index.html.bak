@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CCRAS-Spark</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">ccras.spark@gmail.com</a></i>
+        
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">Spark<span>.</span></a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="assets/img/ccras_logo.png" alt=""></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Instructions</a></li>
+		  <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+		  <li><a class="nav-link scrollto" href="#team">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>CCRAS-Spark</span></h1>
+      
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <h3>Find Out More <span>Spark - CCRAS</span></h3><br>
+          <div class= "col-md-12 fst-italic" style="text-align: justify;">The Central Council for Research in Ayurvedic Sciences (CCRAS) has initiated the “STUDENTSHIP PROGRAM FOR AYURVEDA RESEARCH KEN (SPARK)” in order to promote interest and aptitude for research among ayurveda undergraduates. The main objective of this program is to provide an opportunity to undergraduate Ayurveda students to familiarize themselves with research methodology and techniques by being associated for a short duration with their seniors on ongoing research program or by undertaking independent projects. This may serve as an incentive for them to take up research as a career in the future. The Guide/ Institution must provide the student with all facilities for carrying out research. A number of students are being benefitted by the similar program conducted by ICMR (https://sts.icmr.org.in/) and CCRH (https://www.ccrhindia.nic.in//admnis/admin/showimg.aspx?ID=15931 ).
+</div>
+
+		<br>
+		 <div class= "col-md-12 fst-italic" style="text-align: justify;">The value of the studentship will be Rs.25,000/- per month for two months duration (Total Rs.50,000/- only) and is meant to be a stipend for the student. This is paid only after completion of research and approval of final report. Costs of research must be borne by Institution/Medical College where research is conducted. CCRAS institutes may be approached by the Guide/student for any technical guidance in formulation and execution of research proposals. A certificate will be issued and posted to Principal's office after 6-8 months of completion of research.
+		</div>
+			</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="fst-italic">Eligibility:</h3>
+            <p class="fst-italic" style="text-align: justify;"> This program is only for interested Bachelor of Ayurvedic Medicine and Surgery (BAMS) students [1st year to 4th year (before appearing in 4th year final exams)] studying in Ayurvedic Medical recognized by NCISM, before they appear in their final exams and therefore, interns/ PG students are not eligible to apply. 
+            </p>
+			
+			<p class="fst-italic" style="text-align: justify;">
+             The student must carry out the research in his/ her own medical college under the guide who is regular faculty of the medical college. Only permanent full time faculty members working in any of the Department of the Medical College where the student is enrolled can act as the guide. Part time consultants/visiting faculty/ residents/ Tutors/ PG students cannot be the guide.
+			 
+			</p>
+			
+			<p class="fst-italic" style="text-align: justify;">
+            Only one student will be allowed to work under one guide. Two or more students are not permitted to work on the same topic in a group. Proposals submitted on the same topic by different students are liable to be rejected outright. The student may have one Guide and other Co-Guides. However, CCRAS will recognize only ONE main Guide for all purposes.
+			 
+			</p>
+			<p class="fst-italic" style="text-align: justify;">
+             Only Indian National students who are studying in recognized Ayurvedic medical colleges of India can apply. NRI's & Students from foreign institutes are not eligible for this program.
+			 
+			</p>
+			<p class="fst-italic" style="text-align: justify;">
+             One student can apply in any year of his undergraduate tenure but the studentship can be awarded only two times in different years to one student subject to selection of his application on merits.
+			 
+			</p>
+            </ul>
+          
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+   
+
+    <!-- ======= Counts Section ======= -->
+   
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>General Instructions</h2>
+		  
+		  <!---
+          <h3>Check our <span>Services</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+		  
+		  -->
+        </div>
+		
+		<!--- List of Instruction---->
+		<div class= "col-md-12" style="text-align: justify;">
+		  <tr style="font-family: Arial, Helvetica, sans-serif">
+           <td colspan="3">
+               <ul style="text-align:justify">
+                   <li>
+                      Students are requested to visit CCRAS website (http://www.ccras.nic.in/) and comply with instructions updated from time to time about SPARK program.
+                   </li>
+				   <br />
+				   <li>
+                      Students who were unable to complete their SPARK project can re-apply for next SPARK program with the same project. However, it will not be given any special preference and will be treated as a fresh/ new application. For SPARK program, the last date for receiving ONLINE completed applications with research proposal and other enclosures is 5th September
+                   </li>
+				   <br />
+				   <li>
+                      The student should have all documents ready before filling up online application form (Research proposal/ attestation form/ other enclosures like IEC approval, ICF, Case record forms etc).
+                   </li>
+				   <br />
+				   <li>
+                      Scanned documents i.e. Application/ Report Attestation Form, Ethics Committee Clearance or other files viz., Case record, Questionnaire etc. should be submitted as PDF file only.
+                   </li>
+				   <br />
+				   <li>
+                      Only PDF files can be uploaded on CCRAS website and other formats viz. MS Word, JPEG etc. will not be accepted.
+                   </li>
+				   <br />
+				    <li>
+                      Students/Guides are requested to submit SPARK applications well in advance and not to wait for the last date to avoid the last minute rush
+                   </li>
+				   <br />
+				     <li>
+                      The Council will not be responsible in case the student is unable to submit the proposal/ project in time due to any reason whatsoever and request for extension of last date will not be considered.
+                   </li>
+				   <br />
+				    <li>
+                      After completion of the project under SPARK, CCRAS and Ministry of AYUSH shall not be responsible to provide / ensure any kind of paid or honorary, part or full-time employment to the student in the Council or Ministry.
+                   </li>
+				   <br />
+				   	<li>
+                      All disputes pertaining to this programme shall fall within the jurisdiction of Delhi only.
+                   </li>
+				   <br />
+				   	<li>
+                      All correspondence will be sent on e-mail and/or College address only.
+                   </li>
+				   <br />
+				   	<li>
+                      Last qualification examination in case of 1st Year/Prof. will be 12th Standard marks.
+
+                   </li>
+				   <br />
+
+                   </ul></td></tr></div>
+		
+<!----
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+  
+    <!-- ======= Team Section ======= -->
+	
+	
+	<!---
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our Hardworking <span>Team</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>  </p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p> 61-65, opp. D' Block, Janakpuri Institutional Area, Janakpuri, New Delhi, Delhi 110058</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ccras.spark@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p> 011 2852 5862  </p>
+            </div>
+          </div>
+</div>
+        </div>
+	</section>
+		
+		<!---
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+ 
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ICMR-CCRAS 2022.</span></strong>. All Rights Reserved  || Designed by BMI division ICMR
+      </div>
+      </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

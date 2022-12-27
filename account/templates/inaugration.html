@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>SPARK-CCRAS</title>
+	<script type="text/javascript" src='js/jquery.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.css">
+</head>
+			<style>
+	.img-holder {position: relative;}
+.img-holder .link {
+    position: absolute;
+    bottom: 50px; /*your button position*/
+    right: 80px; /*your button position*/
+	
+}
+	</style>
+<body>
+
+<!--START THE WRAPPER-->
+<div class="container">
+    	<div class="img-holder">
+     
+     
+    <img src="{% static 'inaug.jpeg' %}" style="width:100%; height:100%" alt="image description"/>
+	
+    <a class="link"  href="{% url 'curtain' %}"> <img style="margin-left:35%;" height="80px" src="{% static 'image_but.png' %}" alt="image description"/></a>
+</div>
+
+
+
+
+</div>
+<!--END THE WRAPPER-->
+
+</body>
+</html>
